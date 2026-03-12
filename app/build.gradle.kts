@@ -1,12 +1,13 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
+    alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeCompiler)
-    id("kotlin-parcelize")
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
+    id("kotlin-parcelize")
 }
 
 kotlin {
@@ -91,21 +92,20 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.animation)
     implementation(libs.compose.material3)
-//    implementation(libs.compose.material3.adaptive)
     implementation(libs.compose.icons)
     implementation(libs.capsule)
     implementation(libs.haze)
     implementation(libs.haze.materials)
-    implementation(libs.m3Extended)
+    implementation(libs.compose.material3)
     implementation(libs.coil)
     implementation(libs.room.runtime)
-    ksp(libs.room.compiler)
     implementation(libs.datastore)
     implementation(libs.room.ktx)
     implementation(libs.preference)
     implementation(libs.dslUtilities)
-    ksp(libs.kaidl)
     implementation(libs.kaidl.runtime)
+    ksp(libs.room.compiler)
+    ksp(libs.kaidl)
     compileOnly(libs.xposed.api)
 }
 
