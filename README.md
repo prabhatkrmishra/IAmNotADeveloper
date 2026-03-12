@@ -1,56 +1,56 @@
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/xfqwdsj/IAmNotADeveloper)
 
-**简体中文** | [English](README_en.md) | [Português (Brasil)](README_pt-BR.md) | [Türkçe](README_tr-TR.md)
+[简体中文](README_cn.md) | **English** | [Português (Brasil)](README_pt-BR.md) | [Türkçe](README_tr-TR.md)
 
-# 我不是开发者
+# IAmNotADeveloper
 
-一个用于隐藏Android系统开发者相关选项状态的模块。
+A module for hiding the status of Android system developer options.
 
 ## FAQ
 
-### Q: 我激活了模块，但模块报告“未激活”，这是怎么回事？
+### Q: I have activated the module, but it reports "Module not activated". What should I do?
 
-排查步骤：
+Troubleshooting steps:
 
-1. 确认您已经激活了模块。
-2. 确认您在成功激活模块后，强行停止了模块应用。
-3. 在[Issues](https://github.com/xfqwdsj/IAmNotADeveloper/issues)中搜索相关问题。
-4. 如果没有找到相关问题，请先抓取日志并对模块应用截图，确保包含完整的模块状态卡片（如果无法在一张截图中包含，请分多张截图）。
-5. 在[Issues](https://github.com/xfqwdsj/IAmNotADeveloper/issues)中提交新问题，并上传日志。
+1. Make sure you have activated the module.
+2. Make sure you have force stopped the module app after successful activation.
+3. Search for related issues in the [Issues](https://github.com/xfqwdsj/IAmNotADeveloper/issues) section.
+4. If you cannot find a related issue, please capture logs and take screenshots of the module app, ensuring the full module status card is visible (if it cannot fit in one screenshot, use multiple).
+5. Submit a new issue in [Issues](https://github.com/xfqwdsj/IAmNotADeveloper/issues) and upload the logs.
 
-### Q: 如何确认LSPosed中，模块已经激活？
+### Q: How do I confirm that the module is activated in LSPosed?
 
-您可以通过以下步骤确认：
+You can confirm by following these steps:
 
-1. 通过任意方式启动LSPosed管理器。
-2. 在“模块”页面中，找到“我不是开发者”模块。
-3. 确认“启用模块”开关处于开启状态。
+1. Launch the LSPosed Manager by any means.
+2. On the "Modules" page, find the "IAmNotADeveloper" module.
+3. Make sure the "Enable module" switch is turned on.
 
-### Q: 如何抓取日志？
+### Q: How do I capture logs?
 
-您可以通过以下步骤抓取日志：
+You can capture logs by following these steps:
 
-1. 通过任意方式启动LSPosed管理器。
-2. 在“日志”页面中，点击右上角的“保存”图标按钮。
-3. 选择一个合适的保存位置，如“下载内容”，不要修改文件名。
-4. 点击“保存”按钮。
+1. Launch the LSPosed Manager by any means.
+2. On the "Logs" page, tap the "Save" icon button in the upper right corner.
+3. Choose a suitable save location, such as "Downloads", and do not change the file name.
+4. Tap the "Save" button.
 
-### Q: 我对某应用程序激活了模块，但是应用程序崩溃了/没有任何效果/被检测器应用检测到了，怎么办？
+### Q: I activated the module for a certain app, but the app crashes/has no effect/is detected by a detector app. What should I do?
 
-本模块的实现方式为直接注入目标应用程序，对于内置注入防护的应用程序，模块可能会不起作用，甚至会使应用拒绝工作。
+This module works by directly injecting into the target app. For apps with built-in injection protection, the module may not work or may cause the app to refuse to run.
 
-解决方案：无。[#104](https://github.com/xfqwdsj/IAmNotADeveloper/issues/104)已经立项，您可以耐心等待，没有预计完成时间。**请不要提交关于此问题的任何Issue，它将会被直接关闭。**
+Solution: None at the moment. See [Issue #104](https://github.com/xfqwdsj/IAmNotADeveloper/issues/104) for details. Please wait patiently; there is currently no ETA (Estimated Time of Arrival). **Do not submit any issues regarding this problem; they will be closed without further explanation.**
 
-## 如何贡献
+## How to Contribute
 
-如果您想为本项目贡献代码，请参考[CONTRIBUTING.md](CONTRIBUTING_zh-CN.md)。
+If you want to contribute code to this project, please refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 隐私协议
+## Privacy Agreement
 
-本应用的“测试”功能会获取您对应系统开关的状态，包括：
+The "Test" function of this application will obtain the status of your corresponding system switch, including:
 
-- 开发者模式
-- USB 调试
-- 无线调试
+- Developer mode
+- USB debugging
+- Wireless debugging
 
-但是本应用不会收集您的任何信息。
+However, this application will not collect any information about you.
